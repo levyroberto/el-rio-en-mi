@@ -1,0 +1,188 @@
+    /* VARIABLES Y TIPOGRAFÍA GLOBALES */
+    :root {
+        --color-main-bg: #D9DFD3;        /* Verde Salvia pastel */
+        --color-secondary-bg: #F4F1E6;   /* Beige crema */
+        --color-text-dark: #333333;      /* Gris antracita suave */
+        --color-text-muted: #4D5A40;     /* Verde oscuro elegante */
+        --color-accent-green: #6D7F5E;   /* Verde Oliva */
+        --color-accent-soft: #EBCFA8;    /* Arena/durazno pastel */
+    }
+
+    body {
+        font-family: 'Inter', sans-serif; /* Aplica la fuente moderna */
+        color: var(--color-text-light); /* Aplica el color de texto claro */
+        background-color: var(--color-main-bg) !important;
+    }
+
+
+    h1 {
+      color: var(--color-main-bg) !important; 
+    }
+
+    h2, h6 {
+      color: var(--color-text-muted); 
+      font-weight: 700; /* Títulos con buen peso */
+    }
+
+    .main-text-color {
+      color: var(--color-main-bg) !important;
+    }
+    
+    .bg-dark {
+      background-color: var(--color-main-bg) !important;
+    }
+
+    .bg-secondary-dark { /* Nueva clase para el fondo alterno */
+      background-color: var(--color-secondary-bg) !important;
+    }
+    
+    /* ENLACES DE ACENTO */
+    .accent-link, .nav-link {
+        color: var(--color-accent-green) !important;
+        text-decoration: none;
+        transition: color 0.3s ease, border-bottom 0.3s ease;
+    }
+
+    .accent-link:hover, .nav-link:hover {
+        color: var(--color-accent-green) !important;
+        border-bottom: 2px solid var(--color-accent-green);
+        padding-bottom: 2px;
+    }
+    
+    .navbar-dark .navbar-toggler-icon {
+        mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='black' stroke-width='3' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        mask-size: contain;
+        mask-repeat: no-repeat;
+        background-color: var(--color-accent-green);
+      }
+
+    .hero-image-container {
+        position: relative;
+        aspect-ratio: 390 / 239; /* Mantiene el formato exacto */
+        width: 100%;            /* Ocupa el ancho disponible */
+        max-height: 50vh;       /* Para que no se haga gigante en pantallas altas */
+        overflow: hidden;
+      }
+      
+      .hero-image-container::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+      
+        background-image:
+          url('./assets/bg.jpg');
+      
+        background-size: cover;
+        background-position: center 20%;
+        z-index: -1;
+      }
+
+    .hero-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* Oscurece la imagen para que el texto resalte */
+        background-color: rgba(0, 0, 0, 0.4); 
+        z-index: 1;
+    }
+
+    .hero-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        /* Sutil borde de acento */
+        padding: 4rem;
+    }
+    
+    .display-1 { /* Título Hero más grande */
+      font-size: 3rem;
+    }
+
+    /* SINOPSIS */
+    .py-6 { /* Más padding vertical para secciones */
+      padding-top: 6rem !important;
+      padding-bottom: 6rem !important;
+      color: var(--color-accent-green) !important;
+    }
+
+    /* Recorta el texto a 6 líneas */
+    .sinopsis-collapsed {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 6;
+      -webkit-box-orient: vertical;
+      line-height: 1.8; /* Aumentamos el interlineado para legibilidad */
+    }
+
+    /* VIDEO */
+    .video-shadow {
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Sombra elegante en fondo oscuro */
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    /* FOTOS */
+    .foto-box {
+        width: 100%;
+        aspect-ratio: 16/10; 
+        overflow: hidden;
+        border-radius: 8px; /* Borde más sutil */
+        box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    }
+
+    .foto-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        transition: transform 0.6s cubic-bezier(0.25, 0.1, 0.25, 1);
+    }
+
+    .foto-box:hover .foto-img {
+        transform: scale(1.05);
+    }
+
+    /* ELENCO/ALUMNOS */
+    .alumno-foto {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        /* Borde sutil y minimalista del color de acento */
+        border: 2px solid var(--color-accent-green); 
+        box-shadow: 0 0 15px rgba(0,0,0,0.5);
+        transition: transform 0.4s ease;
+    }
+
+    .alumno-item:hover .alumno-foto {
+        transform: scale(1.08);
+        border: 2px solid var(--color-text-light); /* Borde blanco al pasar el mouse */
+    }
+
+    .text-accent {
+      color: var(--color-accent-green) !important;
+    }
+
+    /* FOOTER */
+    .border-secondary {
+      border-color: rgba(255, 255, 255, 0.1) !important; /* Borde sutil y claro */
+    }
+
+    @media (max-width: 991px) {
+        .navbar-collapse {
+          display: flex;
+          justify-content: flex-end;
+        }
+      
+        .navbar-nav {
+          margin-left: auto;
+          text-align: right;
+        }
+      }
+
+      section {
+        scroll-margin-top: 100px;
+      }
