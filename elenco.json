@@ -1,0 +1,62 @@
+[
+    {
+        "nombre": "Gonzalo Ruiz",
+        "rol": "Profesor",
+        "foto": "./assets/gonzalo_ruiz.jpg"
+    },
+    {
+        "nombre": "Roxana Hollosi",
+        "rol": "Madre",
+        "foto": "./assets/roxana.jpg"
+    },
+    {
+        "nombre": "Liliana Diaz",
+        "rol": "Madre",
+        "foto": "./assets/liliana.jpg"
+    },
+    {
+        "nombre": "Adriana Ziella",
+        "rol": "Marta",
+        "foto": "./assets/adriana.jpg"
+    },
+    {
+        "nombre": "Joana da Fonseca",
+        "rol": "Marta",
+        "foto": "./assets/person.png"
+    },
+    {
+        "nombre": "Yesica Muszczynski",
+        "rol": "Marta",
+        "foto": "./assets/yesi.jpg"
+    },
+    {
+        "nombre": "Yamila Machuca",
+        "rol": "Marta",
+        "foto": "./assets/yamila.jpg"
+    },
+    {
+        "nombre": "Gisela Zenón",
+        "rol": "Joven",
+        "foto": "./assets/gise_zenon.jpg"
+    },
+    {
+        "nombre": "Sabrina Freira Osswald",
+        "rol": "Joven",
+        "foto": "./assets/person.png"
+    },
+    {
+        "nombre": "Hernán Rodríguez",
+        "rol": "Juan",
+        "foto": "./assets/hernan.jpg"
+    },
+    {
+        "nombre": "Nicolás Gabriel Pizzella",
+        "rol": "Juan",
+        "foto": "./assets/nicolas.jpg"
+    },
+    {
+        "nombre": "Octavio Martín Gorrini",
+        "rol": "Juan",
+        "foto": "./assets/oky.jpg"
+    }
+]
