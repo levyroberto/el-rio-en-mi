@@ -27,6 +27,7 @@
           <li class="nav-item"><a class="nav-link" href="#video">Video</a></li>
           <li class="nav-item"><a class="nav-link" href="#elenco">Elenco</a></li>
           <li class="nav-item"><a class="nav-link" href="#fotos">Fotos</a></li>
+          <li class="nav-item"><a class="nav-link" href="letras.html">Letras</a></li>
         </ul>
       </div>
     </div>
@@ -40,12 +41,12 @@
     </div>
   </header>
 
-  <section id="sinopsis" class="py-6 bg-dark">
+  <section id="sinopsis" class="py-3 bg-dark">
     <div class="container">
       <div class="row justify-content-center">
         <div class="col-lg-8">
           <h2 class="mb-4 text-center">Sinopsis</h2>
-          <p id="sinopsis-text" class="sinopsis-collapsed" style="font-size: 1.15rem;">
+          <p id="sinopsis-text" class="collapsed" style="font-size: 1.15rem;">
             Esta muestra está inspirada en El río en mí, de Francisco Lumerman, una obra que combina realismo social,
             poesía y elementos fantásticos. La historia transcurre en un pequeño pueblo del litoral marcado por la
             contaminación del río y por la misteriosa aparición de una enredadera oscura llamada Katupirí, que parece
@@ -63,25 +64,26 @@
             través de este fragmento, se invita a recorrer las sensaciones centrales del universo de Lumerman: la
             fragilidad, la violencia silenciosa, la naturaleza como fuerza viva y los vínculos marcados por lo no dicho.
           </p>
-          <a id="toggle-link" href="#" class="accent-link d-inline-block">
-            Ver más
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="video" class="py-6">
-    <div class="container my-4">
-      <div class="row justify-content-center">
-        <div class="col-md-9 col-lg-7 d-flex justify-content-center">
-          <div class="ratio ratio-16x9 video-shadow" style="aspect-ratio: 9 / 16; width: 300px;">
-            <iframe src="https://www.youtube.com/embed/Hss7F4UUFLY" title="El río en mi" frameborder="0" style="width:100%; height:100%;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="text-center">
+            <a id="toggle-sinopsis" href="#" class="accent-link">Ver menos</a>
           </div>
         </div>
       </div>
     </div>
   </section>
+
+  <section class="py-3">
+    <div class="container">
+      <h2 class="mb-4 text-center">Letras de canciones</h2>
+      <div id="letras-wrapper" class="collapsed" data-toggle-target>
+        <div id="letras-container" class="row g-5 justify-content-center"></div>
+      </div>
+      <div class="text-center">
+        <a id="toggle-letras" href="#" class="accent-link">Ver más</a>
+      </div>
+    </div>
+  </section>
+  
 
   <section id="elenco" class="bg-dark">
     <div class="container">
@@ -95,56 +97,36 @@
     </div>
   </section>
 
+  <section id="video" class="py-3">
+    <div class="container my-4">
+      <div class="row justify-content-center">
+        <div class="col-md-9 col-lg-7 d-flex justify-content-center">
+          <div class="ratio ratio-16x9 video-shadow" style="aspect-ratio: 9 / 16; width: 300px;">
+            <iframe src="https://www.youtube.com/embed/Hss7F4UUFLY" title="El río en mi" frameborder="0" style="width:100%; height:100%;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <section id="fotos" class="py-6">
+  <section id="video2" class="pt-0 pb-5">
+    <div class="container my-4">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-lg-6 d-flex justify-content-center">
+          <div class="ratio ratio-16x9 video-shadow" style="width: 100%;">
+            <iframe src="https://www.youtube.com/embed/IMwnT-e4oU0" title="Muestra 3er año " frameborder="0" style="width:100%; height:100%;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="fotos" class="py-3">
     <div class="container">
       <h2 class="text-center mb-5">Donde empezó todo</h2>
-
-      <div class="row g-4 justify-content-center">
-
-        <div class="col-12 col-lg-5">
-          <div class="foto-box">
-            <img src="./assets/foto1.jpg" alt="Foto 1" class="foto-img">
-          </div>
-        </div>
-
-        <div class="col-12 col-lg-5">
-          <div class="foto-box">
-            <img src="./assets/foto3.jpg" alt="Foto 3" class="foto-img">
-          </div>
-        </div>
-
-        <div class="col-12 col-lg-5">
-          <div class="foto-box">
-            <img src="./assets/foto4.jpg" alt="Foto 4" class="foto-img">
-          </div>
-        </div>
-
-        <div class="col-12 col-lg-5">
-          <div class="foto-box">
-            <img src="./assets/foto5.jpg" alt="Foto 5" class="foto-img">
-          </div>
-        </div>
-
-        <div class="col-12 col-lg-5">
-          <div class="foto-box">
-            <img src="./assets/foto6.jpg" alt="Foto 6" class="foto-img">
-          </div>
-        </div>
-
-          <div class="col-12 col-lg-5">
-            <div class="foto-box">
-              <img src="./assets/foto7.jpg" alt="Foto 7" class="foto-img">
-            </div>
-          </div>  
-
-          <div class="col-12 col-lg-5">
-            <div class="foto-box">
-              <img src="./assets/foto8.jpg" alt="Foto 8" class="foto-img">
-            </div>
-          </div>
-
-      </div>
+  
+      <div id="fotos-grid" class="row g-4 justify-content-center"></div>
+    </div>
   </section>
 
   <section id="" class="py-5 bg-dark text-center">

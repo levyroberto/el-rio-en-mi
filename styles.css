@@ -103,9 +103,9 @@
     }
 
     /* SINOPSIS */
-    .py-6 { /* Más padding vertical para secciones */
-      padding-top: 6rem !important;
-      padding-bottom: 6rem !important;
+    .py-3 { /* Más padding vertical para secciones */
+      padding-top: 3rem !important;
+      padding-bottom: 3rem !important;
       color: var(--color-accent-green) !important;
     }
 
@@ -186,3 +186,34 @@
       section {
         scroll-margin-top: 100px;
       }
+
+section .lyrics,
+.lyrics {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  white-space: pre-line;
+  color: var(--color-text-muted) !important;
+}
+
+#letras-wrapper {
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+}
+
+.letras-collapsed {
+  max-height: 320px; /* ajustá esto según cuántas letras quieras mostrar */
+}
+
+.letras-expanded {
+  max-height: 5000px; /* un número grande, sin miedo */
+}
+
+.collapsed {
+  max-height: 320px;
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+}
+
+.expanded {
+  max-height: 5000px;
+}
