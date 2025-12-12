@@ -50,8 +50,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
       col.innerHTML = `
         <div class="foto-box">
-          <img src="./assets/foto${i}.jpg" alt="Foto ${i}" class="foto-img">
-        </div>
+        <img 
+          src="./assets/foto${i}.jpg"
+          alt="Foto ${i}"
+          class="foto-img"
+          onerror="this.onerror=null; this.src='./assets/foto${i}.JPG';"
+        >
+      </div>
       `;
 
       fotosGrid.appendChild(col);
